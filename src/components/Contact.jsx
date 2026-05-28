@@ -50,13 +50,13 @@ const contacts = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative py-32 px-4 bg-[#030712]/60">
+    <section id="contact" className="relative py-20 md:py-32 px-4 bg-[#030712]/60">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-center mb-10 md:mb-12"
         >
           <span className="text-xs text-zinc-500 tracking-widest uppercase">Contact</span>
           <h2 className="mt-3 text-3xl md:text-4xl font-bold text-white">Let&apos;s Collaborate Together</h2>

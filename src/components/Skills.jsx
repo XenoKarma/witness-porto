@@ -21,13 +21,13 @@ const categories = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="relative py-32 px-4 bg-[#030712]/60">
+    <section id="skills" className="relative py-20 md:py-32 px-4 bg-[#030712]/60">
       <div className="max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12 md:mb-16"
         >
           <span className="text-xs text-zinc-500 tracking-widest uppercase">Expertise</span>
           <h2 className="mt-3 text-3xl md:text-4xl font-bold text-white">Creative Capability</h2>

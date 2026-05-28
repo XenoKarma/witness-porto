@@ -35,13 +35,13 @@ const ArrowIcon = () => (
 
 export default function Experience() {
   return (
-    <section id="experience" className="relative py-32 px-4 bg-[#030712]/60">
+    <section id="experience" className="relative py-20 md:py-32 px-4 bg-[#030712]/60">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-20"
+          className="text-center mb-12 md:mb-20"
         >
           <span className="text-xs text-zinc-500 tracking-widest uppercase">Experience</span>
           <h2 className="mt-3 text-3xl md:text-4xl font-bold text-white">Work Journey</h2>
@@ -49,33 +49,34 @@ export default function Experience() {
         </motion.div>
 
         <div className="relative">
-          <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-violet-500/50 via-violet-500/20 to-transparent -translate-x-1/2 hidden md:block" />
+          <div className="absolute left-[15px] md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-violet-500/50 via-violet-500/20 to-transparent md:-translate-x-1/2" />
 
           <div className="space-y-8 md:space-y-0">
             {experiences.map((item, i) => (
               <div key={i} className="relative md:flex md:items-start">
+                <div className="absolute left-[7px] md:left-1/2 z-10 md:-translate-x-1/2">
+                  <motion.div
+                    initial={{ scale: 0 }}
+                    whileInView={{ scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.2, type: 'spring', stiffness: 200 }}
+                    className="w-[17px] h-[17px] rounded-full bg-violet-500 border-[3px] border-[#030712] shadow-lg shadow-violet-500/30"
+                  />
+                </div>
+
                 {item.side === 'right' ? (
                   <>
                     <div className="hidden md:block w-1/2 pr-12" />
-                    <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 z-10">
-                      <motion.div
-                        initial={{ scale: 0 }}
-                        whileInView={{ scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: i * 0.2, type: 'spring', stiffness: 200 }}
-                        className="w-4 h-4 rounded-full bg-violet-500 border-2 border-[#030712] shadow-lg shadow-violet-500/30"
-                      />
-                    </div>
                     <motion.div
-                      initial={{ opacity: 0, x: 50 }}
+                      initial={{ opacity: 0, x: 30 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ delay: i * 0.2, duration: 0.5 }}
-                      className="md:w-1/2 md:pl-12"
+                      className="md:w-1/2 md:pl-12 pl-10"
                     >
-                      <div className="relative bg-white/[0.03] border border-white/[0.06] rounded-xl p-6 hover:bg-white/[0.06] transition-colors">
+                      <div className="relative bg-white/[0.03] border border-white/[0.06] rounded-xl p-5 md:p-6 hover:bg-white/[0.06] transition-colors">
                         <span className="text-xs text-violet-400/60 font-mono">{String(i + 1).padStart(2, '0')}</span>
-                        <h3 className="mt-2 text-lg font-semibold text-white">{item.title}</h3>
+                        <h3 className="mt-2 text-base md:text-lg font-semibold text-white">{item.title}</h3>
                         <p className="mt-1 text-sm text-zinc-400">{item.company}</p>
                         <p className="mt-2 text-xs text-zinc-600">{item.date}</p>
                       </div>
@@ -89,15 +90,15 @@ export default function Experience() {
                 ) : (
                   <>
                     <motion.div
-                      initial={{ opacity: 0, x: -50 }}
+                      initial={{ opacity: 0, x: -30 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ delay: i * 0.2, duration: 0.5 }}
-                      className="md:w-1/2 md:pr-12 md:text-right"
+                      className="md:w-1/2 md:pr-12 md:text-right pl-10 md:pl-0"
                     >
-                      <div className="relative bg-white/[0.03] border border-white/[0.06] rounded-xl p-6 hover:bg-white/[0.06] transition-colors">
+                      <div className="relative bg-white/[0.03] border border-white/[0.06] rounded-xl p-5 md:p-6 hover:bg-white/[0.06] transition-colors">
                         <span className="text-xs text-violet-400/60 font-mono">{String(i + 1).padStart(2, '0')}</span>
-                        <h3 className="mt-2 text-lg font-semibold text-white">{item.title}</h3>
+                        <h3 className="mt-2 text-base md:text-lg font-semibold text-white">{item.title}</h3>
                         <p className="mt-1 text-sm text-zinc-400">{item.company}</p>
                         <p className="mt-2 text-xs text-zinc-600">{item.date}</p>
                       </div>
@@ -107,15 +108,6 @@ export default function Experience() {
                         </div>
                       )}
                     </motion.div>
-                    <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 z-10">
-                      <motion.div
-                        initial={{ scale: 0 }}
-                        whileInView={{ scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: i * 0.2, type: 'spring', stiffness: 200 }}
-                        className="w-4 h-4 rounded-full bg-violet-500 border-2 border-[#030712] shadow-lg shadow-violet-500/30"
-                      />
-                    </div>
                     <div className="hidden md:block w-1/2 pl-12" />
                   </>
                 )}

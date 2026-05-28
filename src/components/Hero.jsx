@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
 
-      <div className="relative z-10 flex flex-col md:flex-row items-center gap-10 md:gap-16 px-4 max-w-5xl mx-auto">
+      <div className="relative z-10 flex flex-col md:flex-row items-center gap-6 md:gap-16 px-5 md:px-4 max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -14,7 +14,7 @@ export default function Hero() {
           className="shrink-0"
         >
           <div className="relative">
-            <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-[3px] border-[#030712]">
+            <div className="w-36 h-36 sm:w-48 sm:h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-2 border-white/10">
               <img
                 src="/profile/witness.jpeg"
                 alt="Fresh Krist Wit Nesty Sarumaha"
@@ -30,7 +30,7 @@ export default function Hero() {
             delay={100}
             animateBy="words"
             direction="top"
-            className="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight leading-tight"
+            className="text-3xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight leading-tight justify-center md:justify-start"
           />
 
           <motion.div

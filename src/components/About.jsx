@@ -17,9 +17,9 @@ const paragraphs = [
 
 export default function About() {
   return (
-    <section id="about" className="relative py-32 px-4 bg-[#030712]/60">
+    <section id="about" className="relative py-20 md:py-32 px-4 bg-[#030712]/60">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 md:mb-16">
           <span className="text-xs text-zinc-500 tracking-widest uppercase">About</span>
           <ScrollReveal
             enableBlur={true}
@@ -44,7 +44,7 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.15, duration: 0.6 }}
-              className="text-sm md:text-base text-zinc-400 leading-[1.8] text-justify"
+              className="text-sm md:text-base text-zinc-400 leading-[1.8]"
             >
 {text}
             </motion.p>
@@ -54,7 +54,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: paragraphs.length * 0.15, duration: 0.6 }}
-            className="text-sm md:text-base text-zinc-300 leading-[1.8] text-justify font-medium"
+            className="text-sm md:text-base text-zinc-300 leading-[1.8] font-medium"
           >
             Saya siap berkontribusi secara profesional dan memberikan dampak positif di setiap kesempatan yang ada.
           </motion.p>
