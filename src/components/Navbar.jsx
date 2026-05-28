@@ -46,7 +46,7 @@ export default function Navbar() {
 
         <div className="relative flex items-center justify-between bg-white/[0.04] backdrop-blur-xl border border-white/[0.08] rounded-full px-5 md:px-8 h-14 transition-colors">
           <a href="#home" onClick={(e) => handleClick(e, '#home')} className="text-base font-semibold text-white tracking-tight">
-            Fresh<span className="text-violet-400">.</span>
+            Witnes<span className="text-violet-400">.</span>
           </a>
 
           <div className="hidden md:flex items-center gap-1">

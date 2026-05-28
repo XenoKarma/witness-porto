@@ -26,7 +26,7 @@ export default function Hero() {
 
         <div className="text-center md:text-left">
           <BlurText
-            text="Fresh Krist Wit Nesty Sarumaha"
+            text="Fresh Krist Wit Nesty Sarumaha (Witnes)"
             delay={100}
             animateBy="words"
             direction="top"

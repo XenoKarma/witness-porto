@@ -10,7 +10,7 @@ const highlights = [
 ]
 
 const paragraphs = [
-  "Saya, Fresh Krist Wit Nesty Sarumaha, adalah mahasiswa akhir semester 7 Jurusan Sistem Informasi yang memiliki pengalaman di bidang administrasi, digital marketing, e commerce, dan marketplace.",
+  "Saya, Fresh Krist Wit Nesty Sarumaha, adalah mahasiswa akhir semester 8 Jurusan Sistem Informasi yang memiliki pengalaman di bidang administrasi, digital marketing, e commerce, dan marketplace.",
   "Saya pernah bekerja sebagai Admin Social Media Specialist dan Host Live Streaming di PT Nindi Khanda Prima, serta Admin Marketplace, Content Creator, dan Host Live di PT Jiahua. Saya juga memiliki pengalaman sebagai Digital Marketing (Social Media & E-commerce), mulai dari staff hingga supervisor, dengan fokus pada perancangan dan eksekusi strategi konten, promosi penjualan, serta peningkatan engagement dan performa penjualan di berbagai platform digital.",
   "Selain itu, saya memiliki pengalaman dalam event sebagai Event Organizer yang memperkuat kemampuan komunikasi dan interpersonal. Saya menguasai manajemen media sosial, pengelolaan marketplace, Microsoft Office, serta memiliki kemampuan desain grafis sebagai nilai tambah.",
 ]

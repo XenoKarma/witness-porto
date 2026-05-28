@@ -47,7 +47,7 @@ export default function Footer() {
           className="text-center pb-14 border-b border-white/[0.04]"
         >
           <h3 className="text-2xl md:text-3xl font-bold text-white">
-            Fresh<span className="text-violet-400">.</span>
+            Witnes<span className="text-violet-400">.</span>
           </h3>
           <p className="mt-3 text-sm text-zinc-500 max-w-md mx-auto leading-relaxed">
             Digital marketing specialist passionate about helping brands grow through strategic content, social engagement, and marketplace optimization.
