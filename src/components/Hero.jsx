@@ -72,13 +72,15 @@ export default function Hero() {
             className="mt-8 flex flex-wrap gap-3 justify-center md:justify-start"
           >
             <a
-              href="#projects"
+              href="#about"
+              onClick={(e) => { e.preventDefault(); document.getElementById('about')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }}
               className="px-7 py-2.5 bg-white text-[#030712] rounded-full text-sm font-medium hover:bg-zinc-200 transition-all hover:scale-105 active:scale-95"
             >
               Scroll Down
             </a>
             <a
               href="#contact"
+              onClick={(e) => { e.preventDefault(); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }}
               className="px-7 py-2.5 border border-zinc-700 text-white rounded-full text-sm font-medium hover:bg-zinc-800/50 transition-all hover:scale-105 active:scale-95"
             >
               Contact Me
