@@ -4,12 +4,7 @@ import TextType from './TextType'
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#030712]">
-      <div className="absolute inset-0 bg-gradient-to-br from-violet-950/40 via-[#030712] to-sky-950/30" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(120,119,198,0.15),transparent)]" />
-
-      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-violet-600/20 rounded-full blur-[128px]" />
-      <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-sky-600/20 rounded-full blur-[128px]" />
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
 
       <div className="relative z-10 flex flex-col md:flex-row items-center gap-10 md:gap-16 px-4 max-w-5xl mx-auto">
         <motion.div

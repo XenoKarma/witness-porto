@@ -35,7 +35,7 @@ const ArrowIcon = () => (
 
 export default function Experience() {
   return (
-    <section id="experience" className="relative py-32 px-4 bg-[#030712]">
+    <section id="experience" className="relative py-32 px-4 bg-[#030712]/60">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

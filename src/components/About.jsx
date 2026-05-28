@@ -17,7 +17,7 @@ const paragraphs = [
 
 export default function About() {
   return (
-    <section id="about" className="relative py-32 px-4 bg-[#030712]">
+    <section id="about" className="relative py-32 px-4 bg-[#030712]/60">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <span className="text-xs text-zinc-500 tracking-widest uppercase">About</span>
